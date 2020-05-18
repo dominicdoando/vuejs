@@ -8,13 +8,9 @@
 </head>
 <body>
 <div id="vue-app">
-	<h1>Computed Propeties</h1>
-	<button v-on:click="a++">Add to A</button>
-	<button v-on:click="b++">Add to B</button>
-	<p>A - {{a}}</p>
-	<p>B - {{b}}</p>
-	<p>Age + A = {{addToA}}</p>
-	<p>Age + B = {{addToB}}</p>
+	<input type="text" placeholder="Nhập tên" v-on:keyup="nameInput">
+	<input type="text" placeholder="Nhập tuổi" v-on:keyup="ageInput">
+	</div>
 </div>
 <script src="app.js"></script>
 </body>

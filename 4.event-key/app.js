@@ -1,21 +1,24 @@
 new Vue({
 	el:"#vue-app",
 	data:{
-		age:27,
-		x:0,
-		y:0
+		age:20,
+		a:"",
+		b:"",
 	},
 	methods:{
-		add:function(inc){
-			this.age += inc;
+		// nameInput:function(){
+		// 	console.log("Nhập vào tên");
+		// },
+		// ageInput:function(){
+		// 	console.log("Nhập vào tuổi");
+		// },
+	},
+	computed:{
+		addToA:function(){
+			return this.a + this.age;
 		},
-		substract:function(dec){
-			this.age -= dec;
-		},
-		updateXY:function(event){
-			console.log(event);
-			this.x = event.offsetX;
-			this.y = event.offsetY;
+		addToB:function(){
+			return this.b + this.age;
 		}
 	}
 });

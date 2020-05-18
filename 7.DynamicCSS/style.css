@@ -1,0 +1,12 @@
+span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    color:#fff;
+    background: red;
+}
+.avaiable span{
+    background:blue;
+}
